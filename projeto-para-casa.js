@@ -98,14 +98,52 @@ let produtoC = {
 //Copie essa base para o seu código e escreva um programa que resolve o problema do cliente e exibe as informações dos produtos 
 //e o valor aplicado os impostos devidos. Você deve testar o seu código com os 3 produtos.
 
-let valorFinalProdutoA = produtoA.valor*1,12
-let valorFinalProdutoB = produtoB.valor*1,12
-let valorFinalProdutoC = produtoC.valor*1,12
+let valorFinalProdutoA = produtoA.valor*1.12
+let valorFinalProdutoB = produtoB.valor*1.12
+let valorFinalProdutoC = produtoC.valor*1.2
 
-if {produtoA.internacional == true } {
-    let valorFinalProdutoA = produtoA.valor*1,12
-    console.log
+console.log(valorFinalProdutoA)
+console.log(valorFinalProdutoB)
+console.log(valorFinalProdutoC)
+
+//
+
+if (produtoA.internacional == true) {
+    let valorImpostos = produtoA.valor * 1.2
+    console.log(produtoA.nome)
+    console.log("é internacional e custa")
+    console.log(valorImpostos)
+} else {
+    let valorImpostos = produtoA.valor * 1.12
+   console.log(produtoA.nome)
+   console.log("é nacional e custa")
+   console.log(valorImpostos)
 }
 //
+if (produtoB.internacional == true) {
+    let valorImpostos = produtoB.valor * 1.2
+    console.log(produtoB.nome)
+    console.log("é internacional e custa")
+    console.log(valorImpostos)
+} else {
+    let valorImpostos = produtoB.valor * 1.12
+   console.log(produtoB.nome)
+   console.log("é nacional e custa")
+   console.log(valorImpostos)
+}
+//
+if (produtoC.internacional == false) {
+    let valorImpostos = produtoC.valor * 1.2
+    console.log(produtoC.nome)
+    console.log("é internacional e custa")
+    console.log(valorImpostos)
+} else {
+    let valorImpostos = produtoC.valor * 1.12
+   console.log(produtoC.nome)
+   console.log("é nacional e custa")
+   console.log(valorImpostos)
+}
+
+
 
 
